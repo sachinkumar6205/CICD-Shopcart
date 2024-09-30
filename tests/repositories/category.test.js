@@ -22,7 +22,7 @@ describe('Tests for category repository category creation', () => {
         const response = await repository.createCategory('Fashion', 'Fashion related products');
 
         // Expect / Assert
-        expect(response.name).toBe('Fashion');
+        expect(response.name).toBe('Fashion1');
         expect(response.description).toBe('Fashion related products');
     });
 
