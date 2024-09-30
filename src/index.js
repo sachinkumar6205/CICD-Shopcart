@@ -29,7 +29,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/api', ApiRouter); // if any req comes with url starting with /api
 
 app.get('/ping', (req, res) => {
-    res.send('Pong');
+    return res.json({
+        message: 'pong'
+    })
 });
 
 app.listen(PORT, async () => {
